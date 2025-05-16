@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Liên hệ hỗ trợ - Shop game Dopi</title>
+  <link rel="stylesheet" href="thanhtoan.css" />
+</head>
+<body>
+  <!-- Menu -->
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html">🏠 Trang chủ</a></li>
+      <li><a href="sanpham.html">🎮 Sản phẩm</a></li>
+      <li><a href="hoso.html">👤 Tài khoản</a></li>
+      <li><a href="thanhtoan.html">💸 Thanh toán</a></li>
+    </ul>
+  </nav>
+
+ <div class="contact-form">
+  <h2>Thanh toán qua chuyển khoản</h2>
+  <p>Vui lòng nhập đúng thông tin và thực hiện chuyển khoản theo hướng dẫn.</p>
+
+  <form id="paymentForm">
+    <label for="gameCode">Nhập mã game tại đây:</label>
+    <input type="text" id="gameCode" name="gameCode" placeholder="VD: GTA123" required />
+
+    <label for="username">Tên đăng nhập:</label>
+    <input type="text" id="username" name="username" placeholder="Tên đăng nhập trong game" required />
+
+    <label for="phone">Số điện thoại:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Số điện thoại liên hệ" required />
+
+    <button type="submit">Xác nhận thanh toán</button>
+  </form>
+
+  <div id="bankInfo" class="bank-info" style="display:none;">
+    <h3>Thông tin chuyển khoản</h3>
+    <p><strong>Ngân hàng:</strong> Vietcombank</p>
+    <p><strong>Chủ tài khoản:</strong> Nguyễn Văn A</p>
+    <p><strong>Số tài khoản:</strong> 0123456789</p>
+    <p><strong>Nội dung chuyển khoản:</strong> <span id="transferContent"></span></p>
+    <p><em>Vui lòng chuyển khoản theo đúng nội dung để chúng tôi dễ dàng đối soát.</em></p>
+  </div>
+</div>
+
+
+<script src="thanhtoan.js"></script>
+
+<div class="telegram-contact">
+  <a href="https://t.me/tomxinh917" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="Telegram" class="telegram-icon">
+    Liên hệ qua Telegram
+  </a>
+</div>
+<footer style="text-align:center; padding:15px 0; font-size:14px; color:#666;">
+  &copy; 2025 Shop Game Dopi. Bảo lưu mọi quyền.
+</footer>

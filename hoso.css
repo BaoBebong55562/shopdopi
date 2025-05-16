@@ -1,0 +1,126 @@
+/* Mục lục menu */
+.main-nav {
+  background-color: #fbd000;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-nav ul li {
+  font-weight: bold;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+  color: #d49c00; /* Màu thay đổi khi hover */
+}
+
+/* Cấu trúc chung của trang */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h2 {
+  color: #333;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #fbd000;
+}
+
+button {
+  background-color: #fbd000;
+  color: #333;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d49c00;
+}
+
+.profile-box {
+  width: 100%;
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-box p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.profile-box span {
+  color: #555;
+  font-weight: 500;
+}
+
+.profile-box button {
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.profile-box .btn {
+  display: inline-block;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #fbd000;
+  border: 1px solid #fbd000;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.profile-box .btn:hover {
+  background-color: #fbd000;
+  color: #333;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .profile-box {
+    padding: 20px;
+  }
+
+  .profile-box p {
+    font-size: 14px;
+  }
+
+  .profile-box button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

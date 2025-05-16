@@ -1,0 +1,226 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* ----- HEADER ----- */
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fbd000;
+}
+
+/* Search box */
+.search-box input[type="text"] {
+  padding: 10px 16px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  min-width: 200px;
+  max-width: 300px;
+  width: 100%;
+}
+
+/* Action buttons */
+.actions {
+  display: flex;
+  gap: 12px;
+}
+
+.actions .btn {
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: #fbd000;
+  color: #000;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.actions .btn:hover {
+  background-color: #e0b800;
+}
+
+/* ----- NAVIGATION MENU ----- */
+.main-nav {
+  background-color: #fbd000;
+  padding: 10px 30px;
+  border-top: 1px solid #eee;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  padding: 6px 10px;
+  transition: color 0.2s ease;
+}
+
+.main-nav ul li a:hover {
+  color: #333;
+}
+
+/* ----- PRODUCT SECTION ----- */
+.product-section {
+  padding: 30px;
+}
+
+.product-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.new-label {
+  background: red;
+  color: white;
+  padding: 2px 8px;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.ribbon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: red;
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.price {
+  font-weight: bold;
+  color: #000;
+  margin-top: 10px;
+}
+
+/* ----- RESPONSIVE DESIGN ----- */
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .actions {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+.intro {
+  background-color: #fffde7;
+  padding: 30px;
+  border-radius: 12px;
+  margin: 20px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+
+.intro h1 {
+  font-size: 28px;
+  color: #d35400;
+  margin-bottom: 15px;
+}
+
+.intro ul {
+  list-style-type: '🎯 ';
+  margin-left: 20px;
+}
+
+.intro a {
+  color: #0066cc;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.update-reminder {
+  background-color: #e8f5e9;
+  padding: 25px;
+  border-left: 6px solid #43a047;
+  border-radius: 10px;
+  margin: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.update-reminder h2 {
+  color: #2e7d32;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.update-reminder ul {
+  list-style-type: '✅ ';
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.update-reminder p {
+  font-size: 16px;
+  color: #333;
+}

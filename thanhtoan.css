@@ -1,0 +1,133 @@
+/* Thiết lập font chung */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Menu */
+.main-nav {
+  background-color: #fbd000;
+  padding: 10px 30px;
+  border-top: 1px solid #eee;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  padding: 6px 10px;
+  transition: color 0.2s ease;
+}
+
+.main-nav ul li a:hover {
+  color: #333;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff8d8;
+  padding: 30px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.contact-form h2, .bank-info h3 {
+  color: #333;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #fbd000;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.contact-form button:hover {
+  background-color: #e5bc00;
+}
+
+.bank-info {
+  margin-top: 30px;
+  padding: 15px;
+  background: #fff3c4;
+  border-left: 5px solid #fbd000;
+  border-radius: 8px;
+}
+
+.success-message {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #d4edda;
+  color: #155724;
+  display: none;
+  border-radius: 6px;
+}
+
+
+/* Thông báo thành công */
+.success-message {
+  display: none;
+  text-align: center;
+  color: green;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.telegram-contact {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.telegram-contact a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #0088cc;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: opacity 0.2s;
+}
+
+.telegram-contact a:hover {
+  opacity: 0.8;
+}
+
+.telegram-icon {
+  width: 24px;
+  height: 24px;
+  filter: invert(38%) sepia(88%) saturate(747%) hue-rotate(180deg) brightness(98%) contrast(95%);
+}
+
+

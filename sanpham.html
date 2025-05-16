@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sản phẩm - Shop Game Dopi</title>
+  <link rel="stylesheet" href="sanpham.css" />
+  <script type="module" src="sanpham.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+  <!-- Menu -->
+  <nav class="main-nav">
+    <ul>
+      <li><a href="trangchu.html">🏠 Trang chủ</a></li>
+      <li><a href="sanpham.html">🎮 Sản phẩm</a></li>
+      <li><a href="hoso.html">👤 Tài khoản</a></li>
+      <li><a href="thanhtoan.html">💸 Thanh toán</a></li>
+    </ul>
+  </nav>
+<!-- Thanh tìm kiếm + lọc giá -->
+<div class="search-container">
+  <input type="text" id="searchInput" placeholder="Tìm kiếm trò chơi..." oninput="searchProduct()" autocomplete="off">
+  
+  <select id="priceFilter" onchange="searchProduct()">
+    <option value="all">Tất cả giá</option>
+    <option value="0-300">0 - 300.000 VNĐ</option>
+    <option value="301-500">301.000 - 500.000 VNĐ</option>
+    <option value="501+">Trên 500.000 VNĐ</option>
+  </select>
+  <div id="suggestions" class="suggestions-box"></div>
+</div>
+<marquee>Các bạn vui lòng cập nhật trang web để nhận thông báo cập nhật hack nhé.</marquee>
+  <!-- Nội dung trang sản phẩm -->
+  <div class="product-section">
+    <h2>DANH SÁCH SẢN PHẨM</h2>
+    <div class="product-grid">
+      <!-- Sản phẩm 1 -->
+      <div class="product-card" data-id="1">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0rvMEhc9b3orDjgocKpRAG_AHCyi2X5275g&s" alt="ETS2">
+  <h3>ETS2 - mod "map Việt Nam"</h3>
+  <h4>✅ Full 4 pack map Việt Nam</h4>
+  <h4>✅ Tặng kèm mod tiền và kinh nghiệm</h4>
+  <h4>✅ Có video hướng dẫn cài chi tiết</h4>
+  <p class="price">
+    <span class="original-price">500.000 VNĐ</span>
+    <span class="discounted-price">350.000 VNĐ</span>
+  </p>
+  <button class="add-to-cart">Khởi tạo đơn</button>
+</div>
+
+      <!-- Sản phẩm 2 -->
+       <div class="product-card" data-id="2">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0rvMEhc9b3orDjgocKpRAG_AHCyi2X5275g&s" alt="ETS2">
+  <h3>ETS2 - mod "xe khách"</h3>
+  <h4>✅ Có video hướng dẫn cài chi tiết</h4>
+  <h4>✅ Tặng xe khách thaco 2017</h4>
+  <h4>✅ Tặng kèm mod động cơ xe khách trị giá 150.000VNĐ</h4>
+  <p class="price">
+    <span class="original-price">350.000 VNĐ</span>
+    <span class="discounted-price">150.000 VNĐ</span>
+  </p>
+  <button class="add-to-cart">Khởi tạo đơn</button>
+</div>
+      <!-- Sản phẩm 3 -->
+        <div class="product-card" data-id="3">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0rvMEhc9b3orDjgocKpRAG_AHCyi2X5275g&s" alt="ETS2">
+  <h3>ETS2 - mod "phụ kiện"</h3>
+  <p class="price">
+    <span class="original-price">200.000 VNĐ</span>
+    <span class="discounted-price">50.000 VNĐ</span>
+  </p>
+  <button class="add-to-cart">Khởi tạo đơn</button>
+</div>
+      <!-- Sản phẩm 4 -->
+      <div class="product-card" data-id="4">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0rvMEhc9b3orDjgocKpRAG_AHCyi2X5275g&s" alt="ETS2">
+  <h3>ETS2 - mod "xe tải Hino"</h3>
+  <p class="price">
+    <span class="original-price">450.000 VNĐ</span>
+    <span class="discounted-price">99.000 VNĐ</span>
+  </p>
+  <button class="add-to-cart">Khởi tạo đơn</button>
+</div>
+      <!-- Sản phẩm 5 -->
+      <div class="product-card" data-id="5">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8Vfiuv6gyx_Ww4VuMJb66ne2cKzZ6PuW8Tw&s" alt="Liên Quân">
+  <h3>Hack Liên Quân</h3>
+  <h4>✅ Hack map soi sáng full map</h4>
+  <h4>✅ Cam xa, hiện unti</h4>
+  <h4>✅ Antiband Vip</h4>
+  <h4>✅ Hiện time các loại,...</h4>
+  <h4>✅ Hiện rank địch</h4>
+  <h4>🚫 Không khuyến cáo chơi lộ</h4>
+  <h4>⚠️ Test với clone trước vài trận</h4>
+  <p class="price">
+    <span class="original-price">400.000 VNĐ</span>
+    <span class="discounted-price">199.000 VNĐ</span>
+  </p>
+  <button class="add-to-cart">Khởi tạo đơn</button>
+</div>
+      <!-- Sản phẩm 6 -->
+      <div class="product-card" data-id="6">
+  <img src="https://play-lh.googleusercontent.com/lja_bcS9SXsaK4x_q0rXuiqf3CIIwfy8QveRWfW5MEaAPOST_auDLuzWMyMUrBzi0sI" alt="Coin Master">
+  <h3>Coin Master</h3>
+  <h3>🦠 Tính Năng Hack 🦠</h3>
+  <h4>✅ IGG giữ vào bật speed</h4>
+  <h4>✅ Skip ADS (Nếu Có)</h4>
+  <h4>🖥 Bật 4G + VPN dễ tìm thấy invite</h4>
+  <p class="price">
+    <span class="original-price">170.000 VNĐ</span>
+    <span class="discounted-price">50.000 VNĐ</span>
+  </p>
+  <button class="add-to-cart">Khởi tạo đơn</button>
+</div>
+      <!-- Sản phẩm 7 -->
+      <div class="product-card" data-id="7">
+  <img src="https://media.contentapi.ea.com/content/dam/eacom/en-us/migrated-images/2017/01/c-simcity-buildit-scbi-game-splash.jpg.adapt.crop191x100.1200w.jpg" alt="SimCity Buildit">
+  <h3>SimCity Buildit</h3>
+  <h3>🦠 Tính Năng Hack 🦠</h3>
+  <h4>⏺️ Tính năng hack:"Clik vào mục mua phụ kiện tự động tăng." - Ví dụ: "bạn xây nhà tốn 100 vàng thì mua tự động cộng thêm cho bạn 100 vàng."</h4>
+  <p class="price">
+    <span class="original-price">120.000 VNĐ</span>
+    <span class="discounted-price">10.000 VNĐ</span>
+  </p>
+  <button class="add-to-cart">Khởi tạo đơn</button>
+</div>
+      <!-- Sản phẩm 8 -->
+      <div class="product-card" data-id="8">
+  <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/02/minecraft-key-art-feature.jpg" alt="MineCraft">
+  <h3>MineCraft Mobile IOS</h3>
+  <h3>TẢI FREE</h3>
+  <h4>✅Bản free.</h4>
+  <p class="price">
+    <span class="original-price">200.000 VNĐ</span>
+    <span class="discounted-price">0 VNĐ</span>
+  </p>
+  <button class="add-to-cart">Khởi tạo đơn</button>
+</div>
+      <!-- Sản phẩm 9 -->
+      <div class="product-card" data-id="9">
+  <h2>📢 TỔNG HỢP GAME HOT NHẤT!</h2>
+  <p><strong>🔗 Tải Game tại đây:</strong> <a href="https://web1s.io/86F7yWAQHb" target="_blank">https://web1s.io/86F7yWAQHb</a></p>
+  <p><strong>🔑 Pass giải nén:</strong> <code>1111</code></p>
+
+  <h3>🎮 CÁC GAME TRONG FILE:</h3>
+  <ul>
+    <li>🍭 Candy Sugar</li>
+    <li>🏙️ Island City 5</li>
+    <li>⚔️ Shadow Fight 2</li>
+    <li>🦈 Hungry Shark</li>
+    <li>🧟 Plants Vs Zombie 2</li>
+    <li>🚇 Subway Surfers</li>
+    <li>🌊 Zombie Tsunami v4</li>
+    <li>📄 Và 1 file lưu ý: <strong>XIN HÃY ĐỌC 📜</strong></li>
+  </ul>
+
+  <p class="price">
+    <strong>💰 GIÁ:</strong> <span style="color: green; font-weight: bold;">MIỄN PHÍ</span>
+  </p>
+
+  <a href="https://web1s.io/86F7yWAQHb" target="_blank">
+    <button class="add-to-cart">🛒 TẢI GAME NGAY</button>
+  </a>
+</div>
+      <!-- Sản phẩm 10 -->
+     <div class="product-card" data-id="10">
+  <img src="https://play-lh.googleusercontent.com/9ymE9DZrj2CNk9vdpITCUj6m6en__mzf4DvQlS0u8So1g3qhE1VQ9Y0R5H3jBFbOiynW" alt="Liên Minh Tốc Chiến">
+  <h3>Hack Liên Minh tốc chiến</h3>
+  <h4>Vui lòng liên hệ admin để thuê</h4>
+  <p class="price">
+    <span class="original-price">348.000 VNĐ</span>
+    <span class="discounted-price">277.000 VNĐ/30 ngày</span>
+  </p>
+  <button class="add-to-cart">Thuê ngay</button>
+</div>
+      <!-- Sản phẩm 11 -->
+     <div class="product-card" data-id="11">
+  <img src="https://st.download.com.vn/data/image/2022/12/08/lien-minh-huyen-thoai-700.jpg" alt="Tool LMHT">
+  <h3>Tool LMHT</h3>
+  <p class="price">
+    <span class="original-price">650.000 VNĐ</span>
+    <span class="discounted-price">450.000 VNĐ/30 ngày</span>
+  </p>
+  <button class="add-to-cart">Thuê ngay</button>
+ 
+</div>
+      <!-- Sản phẩm 12 -->
+      <div class="product-card" data-id="12">
+  <img src="https://play-lh.googleusercontent.com/E_bwpvmFEiRGW4G9VnTIpoJ4XM-3udz3Jm2cDBVsavyu4pT12x2hNLI1ucWoS2KaQIoA" alt="PUBG MOBILE">
+  <h3>Hack PUBG MOBILE</h3>
+  <h3>Liên hệ admin để hướng dẫn cài hack</h3>
+   <p class="price">
+    <span class="original-price">550.000 VNĐ</span>
+    <span class="discounted-price">310.000 VNĐ/30 ngày</span>
+  </p>
+  <button class="add-to-cart">Thuê ngay</button>
+</div>
+      <!-- Sản phẩm 13 -->
+       <div class="product-card" data-id="13">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiXN9xSEe8unzPBEQOeAKXd9Q55efGHGB9BA&s" alt="Facebook Clone">
+  <h3>Facebook Clone</h3>
+  <h3>Acc test hack pubg mobile</h3>
+  <p class="price">
+    <span class="original-price">17.000 VNĐ/tài khoản</span>
+    <span class="discounted-price">5.000 VNĐ/tài khoản</span>
+  </p>
+  <button class="add-to-cart">Tạo đơn ngay</button>
+</div>
+      <!-- Sản phẩm 14 -->  
+        <div class="product-card" data-id="14">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpauU6PNmD6T6P17jCgmdNboZLlwYttds9Kw&s" alt="Dragon City">
+  <h3>Hack Dragon City</h3>
+  <h3>+ Bất tử + One hit + Tự động đánh + Địch đóng băng</h3>
+  <p class="price">
+    <span class="original-price">0 VNĐ</span>
+    <span class="discounted-price">Miễn phí</span>
+  </p>
+  <div class="product-card" data-id="14">
+  <button class="add-to-cart">Tạo đơn ngay</button></div>
+    </div>
+     <!-- Sản phẩm 15 -->  
+        <div class="product-card" data-id="15">
+  <img src="https://i.ytimg.com/vi/Q7lurtYkvJE/maxresdefault.jpg" alt="Shooter Pool">
+  <h3>Shooter Pool</h3>
+  <h3> Cho thuê acc Shooter Pool theo giờ hoặc ngày</h3>
+  <p class="price">
+  <h3><span class="discounted-price">35.000 VNĐ/1 giờ</span></h3>
+  <h3><span class="discounted-price">100.000 VNĐ/5 giờ</span></h3>
+  <h3><span class="discounted-price">200.000 VNĐ/24 giờ</span></h3>
+  </p>
+  <button class="add-to-cart">Thuê ngay</button>
+  </div>
+  <script src="search.js"></script>
+</body>
+</html>
+<footer style="text-align:center; padding:15px 0; font-size:14px; color:#666;">
+  &copy; 2025 Shop Game Dopi. Bảo lưu mọi quyền.
+</footer>
